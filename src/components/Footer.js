@@ -4,9 +4,9 @@ import { SiLeetcode } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa6";
 export default function Footer() {
   return (
-    <footer class="bg-zinc-900 text-gray-200 p-4 mt-auto text-sm">
-      <div class="container mx-auto text-center">
-        <div class="flex justify-center space-x-8 mb-4">
+    <footer className="bg-zinc-900 text-gray-200 p-4 mt-auto text-sm">
+      <div className="container mx-auto text-center">
+        <div className="flex justify-center space-x-8 mb-4">
           <a href="https://x.com/pkpotter03">
             <FaXTwitter />
           </a>
