@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  @apply bg-zinc-900 text-gray-200
+}
+
+.typing-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+  content: "Software Developer";
+  @apply text-blue-400;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  right: -8;
+  animation: cursor 0.5s infinite;
+}
+
+@keyframes cursor{
+  to{
+      border-left: 3px solid #60a5fa;
+  }
+}
+
+@keyframes words{
+  0%, 50%{
+      content: "Tech Enthusiast";
+  }
+  50%, 100%{
+      content: "Software Developer";
+  }   
+}
